@@ -30,7 +30,7 @@ function toProperCase(lower) {
   return lower.charAt(0).toUpperCase() + lower.substr(1);
 }
 
-function ControlButton({ name, active }) {
+function ControlButton({ name }) {
   return (
     <AppContext.Consumer>
       {({ firstVisit, page, setPage }) => (
